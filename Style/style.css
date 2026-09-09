@@ -35,7 +35,7 @@
 }
 .squares__container:nth-child(1){
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-end;
 }
 
 .squares__container:nth-child(2){
