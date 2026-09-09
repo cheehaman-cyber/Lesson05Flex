@@ -1,0 +1,83 @@
+.squares {
+    min-height: 100vh;
+    background-color: #400015;
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box-container {
+    background-color: orange;
+    height: 130px;
+    width: calc(50% - 10px);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    flex-shrink: 0;
+}
+.box-container:nth-child(1) {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.box-container:nth-child(2) {
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.box-container:nth-child(3) {
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+.box-container:nth-child(4) {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.box-container:nth-child(5) {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box-container:nth-child(6) {
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.circles {
+    background-color: orange;
+    min-height: 100vh;
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.circle-container {
+    background-color: #400015;
+    height: 100px;
+    width: calc(50% - 10px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+    border-radius: 50%;
+}
