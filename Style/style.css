@@ -1,57 +1,84 @@
 .squares {
     min-height: 100vh;
-    background-color: #400015;
+    background-color: #650407;
     padding: 20px;
 
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
 }
 
-.box-container {
-    background-color: orange;
-    height: 130px;
+.squares__container{
+    background-color: #F48C06;
+    height: 160px;
     width: calc(50% - 10px);
+    padding: 20px;
 
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 20px;
+    
 }
 
-.box {
-    width: 50px;
-    height: 50px;
-    background-color: red;
+.squares__box {
+    width: 78px;
+    height: 78px;
+    background-color: #9D0208;
     flex-shrink: 0;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.box-container:nth-child(1) {
+.squares__container:nth-child(1){
     justify-content: flex-start;
     align-items: flex-start;
 }
 
-.box-container:nth-child(2) {
+.squares__container:nth-child(2){
     justify-content: center;
     align-items: flex-end;
 }
 
-.box-container:nth-child(3) {
-    justify-content: flex-end;
-    align-items: stretch;
+.squares__container:nth-child(2) .squares__box {
+    width: 78px;
+    height: 120px;
 }
 
-.box-container:nth-child(4) {
-    justify-content: space-between;
-    align-items: flex-start;
-}
-.box-container:nth-child(5) {
-    justify-content: space-evenly;
+.squares__container:nth-child(3){
+    justify-content: flex-end;
     align-items: center;
 }
 
-.box-container:nth-child(6) {
+.squares__container:nth-child(4){
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+.squares__container:nth-child(4) .squares__box:nth-child(3) {
+    align-self: flex-end;
+}
+.squares__container:nth-child(5){
     justify-content: space-evenly;
-    align-items: flex-end;
+    align-items: center;
+}
+.squares__container:nth-child(5) .squares__box:nth-child(1),
+.squares__container:nth-child(5) .squares__box:nth-child(3) {
+    height: 120px;
+}
+
+.squares__container:nth-child(6){
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.squares__container:nth-child(6) .squares__box:nth-child(2) {
+    width: 156px;
 }
 
 .circles {
@@ -78,6 +105,24 @@
 .circle {
     width: 40px;
     height: 40px;
-    background-color: orange;
+    background-color: rgb(0, 8, 255);
     border-radius: 50%;
+}
+.circle-container:nth-child(1) {
+    justify-content: flex-start;
+}
+.circle-container:nth-child(2) {
+    justify-content: flex-start;
+}
+.circle-container:nth-child(3) {
+    justify-content: flex-start;
+}
+.circle-container:nth-child(4) {
+    justify-content: flex-start;
+}
+.circle-container:nth-child(5) {
+    justify-content: flex-start;
+}
+.circle-container:nth-child(6) {
+    justify-content: flex-start;
 }
